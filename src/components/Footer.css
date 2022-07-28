@@ -1,0 +1,92 @@
+.footer-container{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(230, 218, 247);
+    color: rgb(76, 61, 51);
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-col-1{
+    width: 50%;
+}
+
+.footer-col-2{
+    width: 50%;
+}
+
+.footer-img{
+    height: 120%;
+    width: 100%;
+}
+
+.footer-text{
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+.footer-text h3{
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+}
+
+.address{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.address h4{
+    font-size: 25px;
+}
+
+.address p{
+    font-weight: 600;
+}
+
+.contact{
+    margin-bottom: 30px;
+}
+
+.contact h4{
+    font-size: 25px;
+}
+
+.contact p{
+    font-weight: 600;
+}
+
+.email h4{
+    font-size: 25px;
+}
+
+.email p{
+    font-weight: 600;
+}
+
+.copyright{
+    font-weight: 600;
+    margin-top: 65px;
+    margin-left: 65px;
+}
+
+
+@media screen and (max-width: 780px){
+    .footer-info{
+        /*  
+        We have used column reverse because, 
+        we don't want the image column in place of footer.
+        */
+        flex-direction: column-reverse;
+    }
+    
+    .footer-col-1{
+        width: 100%;
+    }
+    
+    .footer-col-2{
+        width: 100%;
+    }
+}

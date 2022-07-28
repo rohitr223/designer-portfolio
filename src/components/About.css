@@ -1,0 +1,80 @@
+.about-container{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(247, 221, 221);
+}
+
+.about-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-col-1{
+    width: 50%;
+}
+
+.about-col-2{
+    width: 50%;
+}
+
+.about-img{
+    height:350px;
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.about-text{
+    margin-top: 310px;
+    margin-left: 50px;
+}
+
+.about-text h3{
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.about-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+@media screen and (max-width:780px){
+    .about-info{
+        flex-direction: column;
+    }
+
+    .about-col-1{
+        width: 100%;
+    }
+    
+    .about-col-2{
+        width: 100%;
+    }
+
+    .about-img{
+        height:300px;
+        /* Note: We are using "%" for width and not "px" because
+        it makes the image responsive in terms of width. 
+        We are using "width: 90% ;" because we have given "width: 100%;"
+        for "hero-col-1" for small screen devices
+        */
+        width: 90%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .about-text{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-text h3{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+}   
